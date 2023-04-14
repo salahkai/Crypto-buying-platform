@@ -36,7 +36,7 @@ export default function CryptoDataTable() {
       setcryptoData(() => CryptoData);
       setmarketHistory(() => marketHistoryArr);
     };
-    // getCryptoData();
+    getCryptoData();
     return () => console.log('closed');
   }, []);
 
