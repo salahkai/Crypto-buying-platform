@@ -119,7 +119,7 @@ export default function TradeApp({ cryptoData }) {
 
   return (
     <div className="relative">
-      <div className="-space-x-10 mb-6">
+      <div className="-space-x-10 mb-6 flex justify-center  ">
         <TabLink
           isActive={isBuyTab}
           onTabToggle={handleTabToggle}
@@ -157,7 +157,38 @@ export default function TradeApp({ cryptoData }) {
       <div className="pt-6">
         <h2>Sumarry:</h2>
         <div className="border border:border-darkGray bg-brightGray rounded-lg px-4 py-3 flex-1 min-w-0 transition-color duration-300 leading-tight mt-3">
-          &nbsp;
+          {cryptoBill.crypto.amount === null ||
+          cryptoBill.currency.amount === null ? (
+            <div>&nbsp;</div>
+          ) : isBuyTab === true ? (
+            <div>
+              You get{' '}
+              {
+                <span className="font-medium">
+                  {cryptoBill.crypto.amount.toString().slice(0, 6)}{' '}
+                  {cryptoBill.crypto.symbol}
+                </span>
+              }{' '}
+              for{' '}
+              <span className="font-medium">
+                {cryptoBill.currency.amount} {cryptoBill.currency.symbol}
+              </span>
+            </div>
+          ) : (
+            <div>
+              You get{' '}
+              {
+                <span className="font-medium">
+                  {cryptoBill.currency.amount} {cryptoBill.currency.symbol}
+                </span>
+              }{' '}
+              for{' '}
+              <span className="font-medium">
+                {cryptoBill.crypto.amount.toString().slice(0, 6)}{' '}
+                {cryptoBill.crypto.symbol}{' '}
+              </span>
+            </div>
+          )}
         </div>
       </div>
     </div>

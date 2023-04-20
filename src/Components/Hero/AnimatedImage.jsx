@@ -6,11 +6,13 @@ import lightonImg from '../../images/Hero/animated-bg/lighton.png';
 import cardImg from '../../images/Hero/animated-bg/card.png';
 import lightImg from '../../images/Hero/animated-bg/light.png';
 import coinImg from '../../images/Hero/animated-bg/coin.png';
+import bgImg from '../../images/Hero/animated-bg/bg.png';
 
 export default function AnimatedImage() {
   return (
     <div>
-      <div className="relative   w-full h-[30rem] md:w-[37.5rem] md:h-[37.5rem] md:mx-0 ">
+      <div className="relative mt-4 mx-4 md:mx-0">
+        <img src={bgImg} className="width-full lg:w-[37.5rem]" alt=""></img>
         <img
           src={walletImg}
           className="absolute w-[40%] left-[25%] bottom-[20%]"
@@ -38,7 +40,7 @@ export default function AnimatedImage() {
         ></img>
         <img
           src={lightImg}
-          className="absolute -top-[0.9%]  left-[5.6%] animate-pulse w-[22.05%]"
+          className="absolute -top-[1.5%]  left-[5.6%] animate-pulse w-[22.05%]"
           alt=""
         ></img>
         <img

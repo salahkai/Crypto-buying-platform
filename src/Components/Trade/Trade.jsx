@@ -29,7 +29,7 @@ export default function Trade() {
 
   return (
     <section className="bg-wave-picture bg-no-repeat bg-bottom w-full flex justify-around flex-wrap space-y-6 ">
-      <div className="container outline outline-[15px] outline-violet/20 max-w-md bg-white rounded-lg h-full text-maxDarkGray w-sm p-6 mt-auto overflow-hidden">
+      <div className="container outline outline-[15px] outline-violet/20 max-w-md bg-white md:rounded-lg h-full text-maxDarkGray w-sm p-6 mt-auto overflow-hidden">
         <TradeApp cryptoData={data} />
 
         <button className="py-3 mt-14 w-full rounded-full bg-brighterViolet text-white">

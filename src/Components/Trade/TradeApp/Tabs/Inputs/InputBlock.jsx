@@ -12,7 +12,7 @@ export default function InputBlock({
       <label for="fname">{label}</label>
       <div className="flex gap-2">
         <input
-          value={inputs.amount && inputs.amount.toString().slice(0, 7)}
+          value={inputs.amount && inputs.amount.toString().slice(0, 6)}
           onChange={onAmountChange}
           className="border hover:border-darkGray bg-brightGray rounded-lg px-4 py-3 focus:outline-none focus:ring-brighterViolet focus:ring-2 focus:bg-white focus:border-brightGray flex-1 min-w-0 transition-color duration-300"
           type="number"

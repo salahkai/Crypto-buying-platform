@@ -31,7 +31,7 @@ export default function CryptoDataTable({ data }) {
     return data.prices;
   };
   return (
-    <div className="rounded-2xl overflow-y-hidden border border-brightGray shadow-md self-end md:self-end md:mb-16 xl:self-start xl:mt-16 mx-4 ">
+    <div className="md:rounded-2xl overflow-y-hidden md:border md:border-brightGray shadow-md self-end md:self-end md:mb-16 xl:self-start xl:mt-16  ">
       <table className="text-left bg-white text-veryDarkGray">
         <thead>
           <tr className="border border-brightGray">

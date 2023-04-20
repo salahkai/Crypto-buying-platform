@@ -1,12 +1,12 @@
 import AnimatedImage from './AnimatedImage';
 export default function Hero() {
   return (
-    <section className="container my-8 lg:h-[calc(100vh-6rem)] flex flex-col-reverse lg:flex-row lg:justify-between xl:justify-around ">
+    <section className="container my-2 md:my-8 lg:h-[calc(100vh-6rem)] flex flex-col-reverse lg:flex-row lg:justify-between xl:justify-around ">
       <div className="flex flex-col items-center lg:items-start md:mt-8 text-center lg:text-left">
         <h1 className="text-6xl lg:text-7xl font-semibold ">
           Crypto just<br></br> got <span className="font-bold">easy</span>
         </h1>
-        <p className="mt-8 mb-8 break-words w-96">
+        <p className="mt-8 mb-8 break-words max-w-md mx-2 md:mx-0">
           Our platform offers quick and secure purchase of digital assets with
           various payment options and a user-friendly interface.
         </p>
