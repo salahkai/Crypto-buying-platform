@@ -8,7 +8,7 @@ import { useState } from 'react';
 export default function Navbar() {
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
   return (
-    <nav className="relative container p-6 mx-auto h-24 ">
+    <nav className="relative container p-6  xl:px-20 mx-auto h-24 ">
       <div className="relative flex items-center justify-between z-20">
         <Logo />
         <Items />

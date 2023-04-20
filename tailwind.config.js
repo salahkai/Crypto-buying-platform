@@ -10,7 +10,8 @@ module.exports = {
       sm: '480px',
       md: '768px',
       lg: '976px',
-      xl: '1440px',
+      xl: '1280px',
+      '2xl': '1440px',
     },
     extend: {
       backgroundImage: {
@@ -26,6 +27,22 @@ module.exports = {
         veryDarkGray: 'rgb(75 85 99)', //gray-600
         maxDarkGray: 'rgb(17 24 39)', //gray-900
         Gray: 'rgb(107 114 128)', //gray-500
+      },
+      animation: {
+        'spin-slow': 'bounce 2s  infinite',
+        'ping-slow': 'ping 1s infinite',
+        wiggle: 'wiggle 1s ease-in-out infinite',
+        'move-up': 'move-up 3.5s ease-in-out infinite',
+      },
+      keyframes: {
+        'move-up': {
+          '0%, 100%': { transform: 'translateY(10px) rotate(-3deg)' },
+          '50%': { transform: 'translateY(-30px) rotate(10deg)' },
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(30deg)' },
+        },
       },
     },
   },
