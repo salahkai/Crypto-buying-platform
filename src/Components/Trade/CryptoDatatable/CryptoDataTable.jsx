@@ -17,9 +17,9 @@ export default function CryptoDataTable({ data }) {
       );
       setmarketHistory(() => marketHistoryArr);
     };
-    // getCharts();
+    getCharts();
 
-    return () => console.log('closed');
+    // return () => console.log('closed');
   }, []);
 
   // fetch cryptos market history prices
@@ -43,7 +43,7 @@ export default function CryptoDataTable({ data }) {
         </thead>
         <tbody>
           {data.map((c, index) => (
-            <tr className="border border-brightGray">
+            <tr key={c.symbol} className="border border-brightGray">
               <td className="px-5 py-4 flex space-x-4 items-center">
                 <div className="w-10">
                   <img src={c.image} alt=""></img>

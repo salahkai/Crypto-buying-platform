@@ -7,8 +7,8 @@ export default function Items() {
   ];
   return (
     <div className="space-x-5 hidden md:block ">
-      {menuItems.map((i) => (
-        <Item name={i.name} link={i.link}></Item>
+      {menuItems.map((i, index) => (
+        <Item key={index} name={i.name} link={i.link}></Item>
       ))}
     </div>
   );

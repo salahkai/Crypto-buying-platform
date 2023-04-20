@@ -13,7 +13,7 @@ export default function Trade() {
       const data = await fetchCryptoData();
       setcryptoData(() => data.slice(0, tableItemsNumber));
     };
-    // getCryptoData();
+    getCryptoData();
     return () => null;
     // console.log('closed');
   }, []);
@@ -28,7 +28,7 @@ export default function Trade() {
   };
 
   return (
-    <section className="bg-wave-picture bg-no-repeat bg-bottom w-full flex justify-around flex-wrap space-y-6 ">
+    <section className="bg-wave-picture bg-no-repeat bg-bottom w-full flex justify-around flex-wrap space-y-8 ">
       <div className="container outline outline-[15px] outline-violet/20 max-w-md bg-white md:rounded-lg h-full text-maxDarkGray w-sm p-6 mt-auto overflow-hidden">
         <TradeApp cryptoData={data} />
 
@@ -42,6 +42,7 @@ export default function Trade() {
           </a>
         </p>
       </div>
+      <h2 className="md:hidden text-3xl font-semibold">Crypto Rates: </h2>
       <CryptoDataTable data={cryptoData} />
     </section>
   );

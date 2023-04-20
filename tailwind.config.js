@@ -15,8 +15,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('images/Hero/pattern.png')",
-        'wave-picture': "url('images/Hero/wave.svg')",
+        'hero-pattern': "url('images/pattern.png')",
+        'wave-picture': "url('images/trade-app/wave.svg')",
       },
       colors: {
         violet: 'rgb(167 139 250)', //violet-400

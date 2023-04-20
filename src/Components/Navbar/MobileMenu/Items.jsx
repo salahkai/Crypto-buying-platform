@@ -7,8 +7,8 @@ export default function Items() {
   ];
   return (
     <div className="flex flex-col items-center gap-6">
-      {menuItems.map((i) => (
-        <Item name={i.name} link={i.link}></Item>
+      {menuItems.map((i, index) => (
+        <Item key={index} name={i.name} link={i.link}></Item>
       ))}
     </div>
   );

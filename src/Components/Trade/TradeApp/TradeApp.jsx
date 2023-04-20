@@ -6,8 +6,8 @@ import { cryptoRates, currencyRates } from '../CryptoDatatable/defaultData';
 
 export default function TradeApp({ cryptoData }) {
   const initialCryptoBill = {
-    currency: { symbol: 'USD', amount: null },
-    crypto: { symbol: 'BTC', amount: null },
+    currency: { symbol: 'USD', amount: '' },
+    crypto: { symbol: 'BTC', amount: '' },
   };
   const [isBuyTab, setBuyTab] = useState(true);
 
@@ -119,7 +119,7 @@ export default function TradeApp({ cryptoData }) {
 
   return (
     <div className="relative">
-      <div className="-space-x-10 mb-6 flex justify-center  ">
+      <div className="-space-x-6 sm:-space-x-10 mb-6 flex justify-center  ">
         <TabLink
           isActive={isBuyTab}
           onTabToggle={handleTabToggle}

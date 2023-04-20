@@ -7,8 +7,8 @@ export default function Buttons() {
   ];
   return (
     <div className="space-x-5 hidden md:block">
-      {buttons.map((b) => (
-        <Button name={b.name} link={b.link} type={b.type}></Button>
+      {buttons.map((b, index) => (
+        <Button key={index} name={b.name} link={b.link} type={b.type}></Button>
       ))}
     </div>
   );
